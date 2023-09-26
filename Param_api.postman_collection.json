@@ -1,0 +1,1755 @@
+{
+	"info": {
+		"_postman_id": "5b40a9d5-6beb-4531-abbd-a4f9d8716dec",
+		"name": "Param_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9393/api/tender/details/variation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"id\": 3,\n\"variationAmount\":\"200\",\n\"pgValue\":\"23\"\n   \n\n}",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/tender/details/variation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"variation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/tender/details/confirmDetials",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"id\": 6,\n    \"railway\": \"South Western Line\",\n    \"nameOfWork\": \"Engine Servicing\",\n    \"tendernumber\": \"\",\n    \"tenderdate\": \"04/11/2020\",\n    \"deposit\": 150000.0,\n    \"createdDate\": \"2020-11-04T05:12:47.000+00:00\",\n    \"loaNo\": \"mnq223egm\",\n    \"loaDate\": \"21/21/21\",\n    \"loaValue\": \"30.0\",\n    \"pgAmountDeposited\": \"200\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "pgDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/tender/details/confirmDetials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"confirmDetials"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/tender/details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"railway\": \"Western Line\",\n    \"nameOfWork\": \"Engine Servicing\",\n    \"tendernumber\": \"123456\",\n    \"tenderdate\": \"04/11/2020\",\n    \"deposit\": 150000.0\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "paramDocs",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "railwayDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/tender/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/tender/details/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"id\": 2,\n    \"railway\": \"Western Line\",\n    \"nameOfWork\": \"Engine Servicing\",\n    \"tendernumber\": \"123456\",\n    \"tenderdate\": \"04/11/2020\",\n    \"deposit\": 150000.0,\n    \"createdDate\": \"2020-11-04T05:12:47.000+00:00\",\n    \"loaNo\": \"abc223\",\n    \"loaDate\": \"21/21/21\",\n    \"loaValue\": \"30.0\",\n    \"pgAmountDeposited\": \"200\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "pgDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/tender/details/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/bankguarantee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploadFile1",
+							"type": "file",
+							"src": "/E:/bulkimage/bvRrRP.png"
+						},
+						{
+							"key": "req",
+							"value": "{\n\"caNo\":\"555\",\n\"organization\":\"rail\",\n   \"nameOfWork\": \"Kol-sealdah metro line\",\n    \"beneficiary\": \"Metro line\",\n    \"loaNo\": \"LOA/KOL/SEALDAH/METRO-01\",\n    \"contractValue\": 2.0E7,\n    \"variationNo\": 9887876,\n    \"variationValue\": 3000000.0,\n    \"dateOfCompletion\": \"01/12/2020\",\n    \"bankName\": \"BBI S\",\n    \"cause\": \"Security deposit\",\n    \"bankGuaranteeNo\": 98787876,\n    \"bankGuaranteeAmount\": 200000.0,\n    \"bankGuaranteeIssueDate\": \"15/12/2020\",\n    \"bankGuaranteeValidUptoDate\": \"01/04/2023\",\n    \"bankGuaranteeClaimDate\": \"15/12/2020\",\n    \"remarks\": \"LOA/KOL/SEALDAH/METRO-01 to be completed before April 2023\",\n    \"bankGuaranteeExtendedUptoDate\": \"13/04/2024\",\n    \"fdrNo\": 98098098,\n    \"fdrAmount\": 90000.0,\n    \"fdrIssueDate\": \"31/12/2020\",\n    \"maturityDate\": \"31/12/2020\",\n    \"maturityAmount\": 9.0E7\n   \n\n\n    \n}",
+							"type": "text"
+						},
+						{
+							"key": "uploadFile2",
+							"type": "file",
+							"src": "/E:/bulkimage/EtLyZq.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/bankguarantee/113",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"bankguarantee",
+						"113"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/tender/details/report/abc2234/abc12",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"id\": 2,\n    \"railway\": \"Western Line\",\n    \"nameOfWork\": \"Engine Servicing\",\n    \"tendernumber\": \"123456\",\n    \"tenderdate\": \"04/11/2020\",\n    \"deposit\": 150000.0,\n    \"createdDate\": \"2020-11-04T05:12:47.000+00:00\",\n    \"loaNo\": \"abc223\",\n    \"loaDate\": \"21/21/21\",\n    \"loaValue\": \"30.0\",\n    \"pgAmountDeposited\": \"200\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "pgDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/tender/details/report/abc2234/abc12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"report",
+						"abc2234",
+						"abc12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/tender/details/acBilling",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"loaNo\":\"loa-8-2\",\n    \"contractNo\":\"ca-8-2\",\n\t\"slNo\":\"11\",\n\t\"grossAmount\":\"900\",\n\t\"netAmount\":\"800\",\n\t\"securityDeposit\":\"150\",\n\t\"retentionSupply\":\"142\",\n\t\"retentionExecution\":\"25\",\n\t\"cgst\":\"48\",\n\t\"sgst\":\"36\",\n\t\"it\":\"14\",\n\t\"laborCess\":\"63\"\n}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/tender/details/acBilling",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"acBilling"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/tender/details/comissionStatus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"loaNo\":\"597\",\n\"contractNo\":\"493\",\n\"commissionedDate\":\"31/07/2022\"\n \n}",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/tender/details/comissionStatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"comissionStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/tender/details/contractManagement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n\"loaNo\":\"597\",\n    \"contractNo\": \"493\",\n    \"contractDate\": \"03/07/2021\",\n    \"contractValue\": \"98\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "contractDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/tender/details/contractManagement",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"contractManagement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/design/create-design",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n\"stationName\":\"rampur\",\n\"division\":\"phase2\",\n\"drawingDetails\":\"raliway\",\n\"stationId\":20,\n\"numberOfPages\":\"10\",\n\"givenTo\":\"aa \",\n\"givenToDate\":\" bb\",\n\"receivedFrom\":\"cc \",\n\"receivedFromDate\":\" dd\",\n\"commision\":true,\n\"letterNumber\":\"ff \",\n\"letterNumberDate\":\"gg\",\n\"remarks\":\"hh\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "designDocs",
+							"type": "file",
+							"src": "/E:/bulkimage/DVrtBd.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/design/design/by/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"design",
+						"design",
+						"by",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/design/design/by/20",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/api/design/design/by/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"design",
+						"design",
+						"by",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/bankguarantee/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/api/bankguarantee/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"bankguarantee",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/design/create-design",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n\"stationName\":\"rampur\",\n\"division\":\"phase2\",\n\"drawingDetails\":\"raliway\",\n\"stationId\":6,\n\"numberOfPages\":\"10\",\n\"givenTo\":\" \",\n\"givenToDate\":\" \",\n\"receivedFrom\":\" \",\n\"receivedFromDate\":\" \",\n\"commision\":true,\n\"letterNumber\":\" \",\n\"letterNumberDate\":\"\",\n\"remarks\":\"\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "designDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/design/create-design",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"design",
+						"create-design"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/design/design/by/6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n\"stationName\":\"rampur\",\n\"division\":\"phase2\",\n\"drawingDetails\":\"raliway\",\n\"stationId\":6,\n\"numberOfPages\":\"10\",\n\"givenTo\":\" \",\n\"givenToDate\":\" \",\n\"receivedFrom\":\" \",\n\"receivedFromDate\":\" \",\n\"commision\":true,\n\"letterNumber\":\" \",\n\"letterNumberDate\":\"\",\n\"remarks\":\"\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "designDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/design/design/by/6",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-203-24",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"design",
+						"design",
+						"by",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://loclahost:9393/api/bankguarantee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploadFile1",
+							"type": "file",
+							"src": "/C:/Users/hp/Downloads/Telegram Desktop/Backend with DB script/downlord/Bank_Guarantee_04-02-2022-14-29-38.xlsx"
+						},
+						{
+							"key": "req",
+							"value": "{\"id\":98,\n\"caNo\":\"555\",\n\"organization\":\"rail\",\n   \"nameOfWork\": \"stationman2\",\n    \"beneficiary\": \"Metro line\",\n    \"loaNo\": \"12\",\n\"shortNameOfWork\":\"dfkbk\",\n\n    \"contractValue\": 2.0E7,\n    \"variationNo\": 9887876,\n    \"variationValue\": 3000000.0,\n    \"dateOfCompletion\": \"01/12/2020\",\n    \"bankName\": \"jasbcs\",\n    \"cause\": \"Security deposit\",\n    \"bankGuaranteeNo\": 98787876,\n    \"bankGuaranteeAmount\": 200000.0,\n    \"bankGuaranteeIssueDate\": \"15/12/2020\",\n    \"bankGuaranteeValidUptoDate\": \"01/04/2023\",\n    \"bankGuaranteeClaimDate\": \"15/12/2020\",\n    \"remarks\": \"LOA/KOL/SEALDAH/METRO-01 to be completed before April 2023\",\n    \"bankGuaranteeExtendedUptoDate\": \"13/04/2024\",\n    \"fdrNo\": 98098098,\n    \"fdrAmount\": 90000.0,\n    \"fdrIssueDate\": \"31/12/2020\",\n    \"maturityDate\": \"31/12/2020\",\n    \"maturityAmount\": 9.0E7,\n   \"docsFileDeleteList\":[]\n\n\n    \n}",
+							"type": "text"
+						},
+						{
+							"key": "uploadFile2",
+							"type": "file",
+							"src": "/C:/Users/hp/Downloads/Telegram Desktop/Backend with DB script/downlord/Bank_Guarantee_04-02-2022-14-34-41.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/bankguarantee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"bankguarantee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/bankguarantee/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploadFile1",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "req",
+							"value": "{\n\"caNo\":\"555\",\n\"organization\":\"rail\",\n   \"nameOfWork\": \"Kol-sealdah metro line\",\n    \"beneficiary\": \"Metro line\",\n    \"loaNo\": \"LOA/KOL/SEALDAH/METRO-01\",\n    \"contractValue\": 2.0E7,\n    \"variationNo\": 9887876,\n    \"variationValue\": 3000000.0,\n    \"dateOfCompletion\": \"01/12/2020\",\n    \"bankName\": \"BBI S\",\n    \"cause\": \"Security deposit\",\n    \"bankGuaranteeNo\": 98787876,\n    \"bankGuaranteeAmount\": 200000.0,\n    \"bankGuaranteeIssueDate\": \"15/12/2020\",\n    \"bankGuaranteeValidUptoDate\": \"01/04/2023\",\n    \"bankGuaranteeClaimDate\": \"15/12/2020\",\n    \"remarks\": \"LOA/KOL/SEALDAH/METRO-01 to be completed before April 2023\",\n    \"bankGuaranteeExtendedUptoDate\": \"13/04/2024\",\n    \"fdrNo\": 98098098,\n    \"fdrAmount\": 90000.0,\n    \"fdrIssueDate\": \"31/12/2020\",\n    \"maturityDate\": \"31/12/2020\",\n    \"maturityAmount\": 9.0E7\n   \n\n\n    \n}",
+							"type": "text"
+						},
+						{
+							"key": "uploadFile2",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/bankguarantee/2",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-203-24",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"bankguarantee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/payment/make",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"billNo\": \"1452\",\r\n        \"billPassedDate\": \"24/07/2022\",\r\n        \"paymentRcvDate\": \"28/07/2022\",\r\n        \"gst\": \"0.0\",\r\n        \"grsAmtWGst\": \"60000.0\",\r\n        \"grsAmtWoGst\": \"40000.0\",\r\n        \"retentionDeducted\": \"10000\",\r\n        \"retentionReleased\": \"500\",\r\n        \"sdDeducted\": \"506\",\r\n        \"sdReleased\": \"576\",\r\n        \"billPayable\": \"250000\",\r\n        \"incomeTax\": \"45\",\r\n        \"cgstTds\": \"556\",\r\n        \"sgstTds\": \"556\",\r\n        \"miscCharge\": \"65\",\r\n        \"miscChargeRelease\": \"34\",\r\n        \"cgst\": \"6.0\",\r\n        \"sgst\": \"6.0\",\r\n        \"surcharge\": \"5\",\r\n        \"chkRcv\": \"45\",\r\n        \"bankName\": \"SBI\",\r\n        \"paymentDetailsId\": 1,\r\n        \"projectCode\": \"PRJ0015\",\r\n        \"loa\": \"aa\",\r\n        \"contractName\": \"bb\",\r\n        \"contractAgreementNo\": \"cc\",\r\n        \"gstDeductionRailway\": \"dd\",\r\n        \"securityDepositDeducted\": \"ee\",\r\n        \"securityDepositReleased\": \"ff\",\r\n        \"totalContractValue\": \"hh\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/payment/make",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"payment",
+						"make"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"railway\": \"Western Line\",\n    \"nameOfWork\": \"Engine Servicing\",\n    \"tendernumber\": \"123456\",\n    \"tenderdate\": \"04/11/2020\",\n    \"deposit\": 150000.0\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "paramDocs",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "railwayDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-203-24",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/variation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"id\": 4,\n\"variationAmount\":\"200\",\n\"pgValue\":\"23\"\n   \n\n}",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/variation",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-203-24",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"variation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/acBilling",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n\"id\":4,\n \"slNo\": \"324\",\n        \"grossAmount\": \"65$\",\n        \"netAmount\": \"35\",\n        \"securityDeposit\": \"653\",\n        \"retentionSupply\": \"33\",\n        \"retentionExecution\": \"765\",\n        \"cgst\": \"43\",\n        \"sgst\": \"8654\",\n        \"it\": \"653\",\n        \"laborCess\": \"443\"\n}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/acBilling",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-203-24",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"acBilling"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/report/432/abc12",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"id\": 2,\n    \"railway\": \"Western Line\",\n    \"nameOfWork\": \"Engine Servicing\",\n    \"tendernumber\": \"123456\",\n    \"tenderdate\": \"04/11/2020\",\n    \"deposit\": 150000.0,\n    \"createdDate\": \"2020-11-04T05:12:47.000+00:00\",\n    \"loaNo\": \"abc223\",\n    \"loaDate\": \"21/21/21\",\n    \"loaValue\": \"30.0\",\n    \"pgAmountDeposited\": \"200\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "pgDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/report/432/abc12",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-203-24",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"report",
+						"432",
+						"abc12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/contractManagement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"id\": 1,\n    \"contractNo\": \"abc12\",\n    \"contractDate\": \"21/20/2022\",\n    \"contractValue\": \"203\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "contractDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/contractManagement",
+					"host": [
+						"ec2-13-58-203-24",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"contractManagement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/payment/made/details/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"id\": 1,\n    \"contractNo\": \"abc12\",\n    \"contractDate\": \"21/20/2022\",\n    \"contractValue\": \"203\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "contractDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/payment/made/details/1",
+					"host": [
+						"ec2-13-58-203-24",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"payment",
+						"made",
+						"details",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/confirmDetials",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"id\": 3,\n    \"railway\": \"Western Line\",\n    \"nameOfWork\": \"Engine Servicing\",\n    \"tendernumber\": \"123456\",\n    \"tenderdate\": \"04/11/2020\",\n    \"deposit\": 150000.0,\n    \"createdDate\": \"2020-11-04T05:12:47.000+00:00\",\n    \"loaNo\": \"432\",\n    \"loaDate\": \"21/21/21\",\n    \"loaValue\": \"30.0\",\n    \"pgAmountDeposited\": \"200\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "pgDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/confirmDetials",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-203-24",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"confirmDetials"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-203-24",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/tender/details/lastLoaData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/api/tender/details/lastLoaData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"lastLoaData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/confirmDetials",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"tendernumber\": \"12321\",\n    \"tenderdate\": \"04/11/2020\",\n    \"deposit\": 150000.0,\n    \"createdDate\": \"2020-11-04T05:12:47.000+00:00\",\n    \"loaNo\": \"mnq223\",\n    \"loaDate\": \"21/21/21\",\n    \"loaValue\": \"30.0\",\n    \"pgAmountDeposited\": \"200\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "pgDocs",
+							"type": "file",
+							"src": "/E:/bulkimage/hjsonP.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/confirmDetials",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-203-24",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"confirmDetials"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/get-all-tenderno",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "req",
+							"value": "{\n    \"id\": 1,\n    \"railway\": \"Western Line\",\n    \"nameOfWork\": \"Engine Servicing\",\n    \"tendernumber\": \"123456\",\n    \"tenderdate\": \"04/11/2020\",\n    \"deposit\": 150000.0,\n    \"createdDate\": \"2020-11-04T05:12:47.000+00:00\",\n    \"loaNo\": \"432\",\n    \"loaDate\": \"21/21/21\",\n    \"loaValue\": \"30.0\",\n    \"pgAmountDeposited\": \"200\"\n\n}",
+							"type": "text"
+						},
+						{
+							"key": "pgDocs",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-13-58-203-24.us-east-2.compute.amazonaws.com:9393/api/tender/details/get-all-tenderno",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-203-24",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"tender",
+						"details",
+						"get-all-tenderno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/design/drawing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/design/drawing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"design",
+						"drawing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/design/drawing/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/api/design/drawing/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"design",
+						"drawing",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/design/station",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"drawingId\":106,\r\n\"stationName\":\"gurgaon\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/design/station",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"design",
+						"station"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/ledger",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1,\r\n\"capitalAccount\":\"1100442\",\r\n\"tdsDeductable\":\"11\",\r\n\"name\":\"abcf\",\r\n\"address\":\"delhi\",\r\n\"country\":\"india\",\r\n\"bankDetails\":\"hvhd\",\r\n\"pan\":\"1235\",\r\n\"gst\":\"542\",\r\n\"state\":\"dl\",\r\n\"ledgerName\":\"fcdm\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/ledger",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"ledger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/ordermanagement/project/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"shortName\":\"ase\",\r\n\t \"scheduledSerialNo\":\"14422\",\r\n\t\"descriptionOfMaterial\":\"hvcm\",\r\n\t\"specification\":\"jhk\",\r\n\t \"scheduleUnit\":\"9\",\r\n\t\"scheduleQuantity\":\"g\",\t\r\n\t\"nspection\":\"kf\",\r\n\t \"unitRate\":\"142\",\t\r\n\t\"above\":\"vbg\",\r\n\t \"totalAmount\":\"500\",\r\n\t \"allInclusiveRate\":\"mk\",\r\n\t \"remarks\":\"edf\",\r\n \"inspectionCharges\":\"fg\",\r\n\t \"detailsOfInspections\":\"dwe\",\r\n\t \"billNo\":\"147585\",\r\n\t \"billDate\":\"27/07/2022\",\r\n\t \"billQuantity\":\"14\",\r\n     \"supplierWithAddress\":\"delhi\",\r\n\t \"suupplierRate\":\"14\",\r\n \"dateOfSupply\":\"27/07/2022\",\r\n\t \"supplyQuantit\":\"14\",\r\n\t\"balanceQuantity\":\"52\",\r\n \"dateOfRailwayReceipt\":\"27/07/2022\",\r\n\t\"transporterName\":\"cgm\",\r\n\t\"dateOfArrRailwayStore\":\"27/07/2022\",\r\n    \"delTransportList\":[],\r\n    \"transport\":[],\r\n    \"placeOfDeliveries\":[],\r\n    \"materialTransportStates\":[],\r\n    \"variationQuantities\":[],\r\n    \"delPlaceOfDeliveryList\":[],\r\n    \"delMaterialTransportStatesList\":[],\r\n    \"delVariationQuantitiesList\":[]\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/ordermanagement/project/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"ordermanagement",
+						"project",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/ordermanagement/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploadFile1",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "uploadFile2",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "req",
+							"value": "{\n\n\t \"sortName\":\"ase\",\n\t \"siteName\":\"jvmc\",\n\t \"siteSupervisorName\":\"vft\",\n     \"siteSupervisorContactno\":\"115242\",\n\"siteSupervisorDateOfJoining\":\"27/07/2022\",\n\t \"siteSupervisorSalary\":\"10000\",\n     \"siteSupervisorfoodExpenses\":\"trt\",\n      \"inchargename\":\"rmc\",\n\t \"contactNo\":\"512452\",\n\t \"salary\":\"147\",\n\t \"foodExpenses\":\"136\",\n     \"pettyname\":\"asx\",\n\t \"address\":\"badarpur\",\n\t \"pan\":\"147\",\n\t \"gstNo\":\"852\",\n\t \"aadhar\":\"1245698\",\n\t \"bankDetails\":\"pnb\",\n\t \"indoorOutdoorSelection\":true,\n\t \"serialNo\":\"475\",\n\t \"systemDate\":\"28/07/2022\",\n\t \"projectName\":\"hty\",\n\t\"grossAmountOfPayment\":\"145\",\n\t \"tdsDeductionPercentage\":\"45\",\n\t \"tdsDeducted\":\"785\",\n\t \"netAmountOfPayment\":\"8000\",\n\t \"dateOfPayment\":\"28/07/2022\",\n\t \"grossBillAmount\":\"9000\",\n\t \"tdsPercentage\":\"25\",\n     \"tdsDeducatedd\":\"422\",\n\t \"amountPayable\":\"525\",\n\t \"gstPercentage\":\"60\",\n\t \"gstAmount\":\"145\",\n\t \"netBillAmount\":\"452\",\n\t \"balanceDue\":\"24\",\n   \"pettyContractorName\":\"asd\",\n     \"docsCopyFileDeleteList\":[],\n   \"docsBillCopyFileDeleteList\":[],\n     \"orderCopy\":[],\n    \"orderBillCopy\":[]\n}",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/ordermanagement/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"ordermanagement",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/report",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n\t \"approval\":\"fcd\",\r\n\t\"stationName\":\"badarpur\",\r\n\t \"fileNo\":\"125\",\r\n\t \"division\":\"15\",\r\n\t \"railway\":\"indian railwaiy\",\r\n\t \"drawingType\":\"xbn\",\r\n\t \"noCopy\":14,\r\n\t \"recFrom\":\"14\",\r\n\t \"recdDate\":\"28/07/2022\",\r\n\t \"noCd\":\"142\",\r\n\t \"divd\":\"csc\",\r\n\t \"divdDate\":\"28/07/2022\",\r\n\t\"drawingId\":107,\r\n\t\"drawingCode\":\"14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/transport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t \"transportNo\":\"545\",\r\n\t \"name\":\"ncmd\",\r\n    \"destination\":\"abc\",\r\n\t \"distance\":\"105\",\r\n\t \"capacity\":\"50\",\r\n\t \"rate\":98.0\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/transport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"transport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userCode\":\"d11\",\r\n\t \"name\":\"danish\",\r\n     \"designation\":\"kfc\",\r\n\t\"departmentId\":\"132x\",\r\n\t \"username\":\"danish11\",\r\n\t \"password\":\"danish123\",\r\n\r\n\t \"picture\":\"\",\r\n\t \"pan\":\"ez2365\",\r\n\t \"passport\":\"dcm123\",\r\n\t \"primaryContact\":\"7856941235\",\r\n\t \"secondaryContact\":\"9568341625\",\r\n\t \"permanantAddress\":\"gurgaon\",\r\n\t\"residentialAddress\":\"gurgaon\",\r\n\t \"email\":\"md123@gmail.com\",\r\n\t \"dob\":\"20/04/1999\",\r\n    \"permissions\":[],\r\n\t\"childPermissions\":[]\r\n\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/project/details/items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"projectDetailsId\":20,\r\n\t\"itemData\":[{\r\n        \"itemId\":1,\r\n        \"descriptions\":\"wcd\",\r\n\t      \"ins\":\"hjn\",\r\n          \"schunit\":15.6,\r\n\t \"amt\":152.0,\r\n\t \"perabove\":24.2,\r\n\t\"incrate\":12.3,\r\n    \"vendorId\":1,\r\n\t\"vendRate\":48.6,\r\n\t \"icdetails\":\"gtr\",\r\n\t \"supplyDate\":\"29/07/2022\",\r\n\t \"suppQty\":14.3,\r\n\t \"deliveryPlace\":\"badarpur\",\r\n\t \"wayBillDate\":\"29/07/2022\",\r\n\t \"truckNo\":\"8126\",\r\n\t \"transportId\":1,\r\n\t \"arrRly\":\"rcc\",\r\n\t \"recRly\":\"mds\",\r\n\t \"billNo\":\"51648\",\r\n\t \"bDate\":\"29/07/2022\",\r\n\t \"bQty\":10.3,\r\n\t\"projectLocationsQty\":[],\r\n\t \"eiQty\":[]\r\n\r\n    }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/project/details/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"project",
+						"details",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/vouchar/contra/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"vNumber\":\"542622\",\r\n     \"contraNumber\":\"\",\r\n     \"contDate\":\"29/07/2022\",\r\n\t \"refNo\":122,\r\n\t \"vDate\":\"29/07/2022\",\r\n\t \"cardType\":2,\r\n\t\"cardTypeDetails\":\"dcms\",\r\n\t \"narration\":\"dfg\",\r\n\t \"ledgerId\":2\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/vouchar/contra/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"vouchar",
+						"contra",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/vouchar/journal/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"ledgerId\":2,\r\n    \"vNumber\":\"1100126\",\r\n    \"journalNumber\":\"2360152\",\r\n\t\"jarDate\":\"29/07/2022\",\r\n\t \"refNo\":106,\r\n     \"vDate\":\"29/07/2022\",\r\n\t \"cardType\":2,\r\n\t\"cardTypeDetails\":\"dlkj\",\r\n\t \"narration\":\"mzng\"\r\n\t \r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/vouchar/journal/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"vouchar",
+						"journal",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/vouchar/payment/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"ledgerId\":1,\r\n    \"vNumber\":\"11001\",\r\n    \"paymentNumber\":\"204422\",\r\n\t\"payDate\":\"29/07/2022\",\r\n\t \"refNo\":16,\r\n     \"vDate\":\"29/07/2022\",\r\n\t \"cardType\":2,\r\n\t\"cardTypeDetails\":\"cdj\",\r\n\t \"narration\":\"dsh\"\r\n\t \r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/vouchar/payment/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"vouchar",
+						"payment",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/vouchar/purchase/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"ledgerId\":2,\r\n    \"vNumber\":\"11001\",\r\n    \"purchaseNumber\":\"1004512\",\r\n\t\"perDate\":\"29/07/2022\",\r\n\t \"refNo\":5,\r\n     \"vDate\":\"29/07/2022\",\r\n\t \"cardType\":3,\r\n\t\"cardTypeDetails\":\"kdm\",\r\n\t \"narration\":\"dkg\"\r\n\t \r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/vouchar/purchase/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"vouchar",
+						"purchase",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/vouchar/receipt/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"ledgerId\":1,\r\n    \"vNumber\":\"11014\",\r\n    \"receiptNumber\":\"10046144\",\r\n\t\"rcpDate\":\"29/07/2022\",\r\n\t \"refNo\":26,\r\n     \"vDate\":\"29/07/2022\",\r\n\t \"cardType\":4,\r\n\t\"cardTypeDetails\":\"rchm\",\r\n\t \"narration\":\"mncv\"\r\n\t \r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/vouchar/receipt/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"vouchar",
+						"receipt",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/vouchar/sales/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"ledgerId\":1,\r\n    \"vNumber\":\"1002\",\r\n    \"receiptNumber\":\"100489\",\r\n\t\"rcpDate\":\"29/07/2022\",\r\n\t \"refNo\":9,\r\n     \"vDate\":\"29/07/2022\",\r\n\t \"cardType\":3,\r\n\t\"cardTypeDetails\":\"tjym\",\r\n\t \"narration\":\"yrv\"\r\n\t \r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/vouchar/sales/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"vouchar",
+						"sales",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"typeId\":1,\r\n\t \"typeName\":\"trt\",\r\n\t \"name\":\"hgs\",\r\n\t \"code\":\"w002\",\r\n\t \"unit\":\"4\",\r\n\t\"desc\":\"rms\"\r\n\r\n\t\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/vendor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"companyTypeId\":1,\r\n     \"companyName\":\"dsa\",\r\n\t \"primaryContact\":\"9654235\",\r\n\t \"secondaryContact\":\"6554231\",\r\n\t \"permanentAddress\":\"gurgaon\",\r\n\t \"residentialAddress\":\"gurgaon\",\r\n\t \"pan\":\"ec124\",\r\n\t \"bankDetails\":\"pnb\",\r\n     \"type\":\"d\",\r\n\t \"pincode\":\"110021\",\r\n\t \"city\":\"gurgaon\",\r\n\t \"state\":\"hr\",\r\n\t \"country\":\"india\",\r\n\t\"companyTypeName\":\"cdv\",\r\n\t \"docs\":[]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/vendor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"vendor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/design/hq-approval",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stationId\":37,\r\n    \"sPreparedBy\":\"nfs\",\r\n    \"sReceivedFrom\":\"tcf\",\r\n\t\"sSubmittedTo\":\"hmh\",\r\n\t\"ssReceivedFrom\":\"ert\",\r\n\t\"ssSubmittedTo\":\"asd\",\r\n\t\"scpStatus\":\"t\",\r\n\t\"stPreparedBy\":\"erg\",\r\n\t\"stReceivedFrom\":\"vgt\",\r\n\t\"stSubmittedTo\":\"nhr\",\r\n\t\"stsReceivedFrom\":\"rtg\",\r\n\t\"stsSubmittedTo\":\"gn\",\r\n\t\"stcpStatus\":\"rr\",\r\n\t\"pPreparedBy\":\"jjh\",\r\n\t\"pReceivedFrom\":\"ug\",\r\n\t\"pSubmittedTo\":\"jjk\",\r\n\t \"psReceivedFrom\":\"wert\",\r\n\t\"psSubmittedTo\":\"tyu\",\r\n\t\"pcpStatus\":\"mkj\",\r\n\t\"ipPreparedBy\":\"bhj\",\r\n\t\"ipReceivedFrom\":\"iou\",\r\n\t\"ipSubmittedTo\":\"ert\",\r\n\t\"ipsReceivedFrom\":\"hhhy\",\r\n\t\"ipsSubmittedTo\":\"hse\",\r\n\t\"ipcpStatus\":\"fh\",\r\n\t\"opPreparedBy\":\"sft\",\r\n\t\"opReceivedFrom\":\"gh\",\r\n\t\"opSubmittedTo\":\"uio\",\r\n\t\"opsReceivedFrom\":\"rty\",\r\n\t\"opsSubmittedTo\":\"bbc\",\r\n\t\"opcpStatus\":\"zxc\",\r\n\t\"mpPreparedBy\":\"mkj\",\r\n\t\"mpReceivedFrom\":\"lkm\",\r\n\t\"mpSubmittedTo\":\"tyh\",\r\n\t\"mpsReceivedFrom\":\"wer\",\r\n\t\"mpsSubmittedTo\":\"jcx\",\r\n\t\"mpcpStatus\":\"jkh\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/design/hq-approval",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"design",
+						"hq-approval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/design/circut-diagram",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"stationId\":36,\r\n\t\"lcPreparedBy\":\"trc\",\r\n\t\"lcReceivedFrom\":\"qwe\",\r\n\t\"lcSubmittedTo\":\"njfg\",\r\n\t\"lcsReceivedFrom\":\"kliu\",\r\n\t\"lcsSubmittedTo\":\"fedx\",\r\n\t\"lccpStatus\":\"rgyh\",\r\n\t\"icPreparedBy\":\"zzxxc\",\r\n\t\"icReceivedFrom\":\"asdfr\",\r\n\t\"icSubmittedTo\":\"vbhn\",\r\n\t\"icsReceivedFrom\":\"nfg\",\r\n\t\"icsSubmittedTo\":\"cgf\",\r\n\t\"iccpStatus\":\"mjk\",\r\n\t\"drawingStations\":\"hjgg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/design/circut-diagram",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"design",
+						"circut-diagram"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/design/divisional-approval",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stationId\":37,\r\n\t\"ccPreparedBy\":\"opd\",\r\n\t\"ccReceivedFrom\":\"uty\",\r\n\t\"ccSubmittedTo\":\"err\",\r\n\t\"ccsReceivedFrom\":\"adf\",\r\n\t\"ccsSubmittedTo\":\"jkl\",\r\n\t\"cccpStatus\":\"ghy\",\r\n\t\"crPreparedBy\":\"wdr\",\r\n\t\"crReceivedFrom\":\"trg\",\r\n\t\"crSubmittedTo\":\"plu\",\r\n\t\"crsReceivedFrom\":\"wer\",\r\n\t\"crsSubmittedTo\":\"qwer\",\r\n\t\"crcpStatus\":\"crf\",\r\n\t\"sPreparedBy\":\"bnj\",\r\n\t\"sReceivedFrom\":\"kkr\",\r\n\t\"sSubmittedTo\":\"qwr\",\r\n     \"ssReceivedFrom\":\"lly\",\r\n\t\"ssSubmittedTo\":\"qwr\",\r\n\t\"scpStatus\":\"hty\",\r\n\t\"lPreparedBy\":\"dfr\",\r\n\t\"lReceivedFrom\":\"vfg\",\r\n\t\"lSubmittedTo\":\"qws\",\r\n\t\"lsReceivedFrom\":\"rsd\",\r\n\t\"lsSubmittedTo\":\"vfd\",\r\n\t\"lcpStatus\":\"mkj\",\r\n\t\"cPreparedBy\":\"jhy\",\r\n\t\"cReceivedFrom\":\"xcd\",\r\n\t\"cSubmittedTo\":\"zxc\",\r\n\t\"csReceivedFrom\":\"bvc\",\r\n\t\"csSubmittedTo\":\"mjk\",\r\n\t\"ccpStatus\":\"dhs\",\r\n\"drawingStations\":\"badarpur\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/design/divisional-approval",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"design",
+						"divisional-approval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9393/api/vendor/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "req",
+							"value": "{\t\n    \"refId\":1,\n\t \"key\":\"12\",\n\t\"name\":\"mds\",\n\t\"documentName\":\"kdm\",\n\t\"code\":\"w001\",\n\t\"qty\":1.5,\n\t\"childs\":[]\n}",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9393/api/vendor/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"api",
+						"vendor",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
